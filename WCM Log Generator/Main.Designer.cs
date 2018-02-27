@@ -35,13 +35,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtOutputDirectory = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.btnSelectSourceDirectory = new System.Windows.Forms.Button();
+            this.btnSelectDestDirectory = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtSourceDirectory
             // 
             this.txtSourceDirectory.Location = new System.Drawing.Point(107, 9);
             this.txtSourceDirectory.Name = "txtSourceDirectory";
-            this.txtSourceDirectory.Size = new System.Drawing.Size(439, 20);
+            this.txtSourceDirectory.Size = new System.Drawing.Size(327, 20);
             this.txtSourceDirectory.TabIndex = 0;
             // 
             // DirectoryPicker
@@ -70,7 +72,7 @@
             // 
             this.txtOutputDirectory.Location = new System.Drawing.Point(107, 35);
             this.txtOutputDirectory.Name = "txtOutputDirectory";
-            this.txtOutputDirectory.Size = new System.Drawing.Size(439, 20);
+            this.txtOutputDirectory.Size = new System.Drawing.Size(327, 20);
             this.txtOutputDirectory.TabIndex = 2;
             // 
             // contextMenuStrip1
@@ -78,11 +80,32 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // btnSelectSourceDirectory
+            // 
+            this.btnSelectSourceDirectory.Location = new System.Drawing.Point(440, 7);
+            this.btnSelectSourceDirectory.Name = "btnSelectSourceDirectory";
+            this.btnSelectSourceDirectory.Size = new System.Drawing.Size(106, 23);
+            this.btnSelectSourceDirectory.TabIndex = 4;
+            this.btnSelectSourceDirectory.Text = "Select Directory...";
+            this.btnSelectSourceDirectory.UseVisualStyleBackColor = true;
+            this.btnSelectSourceDirectory.Click += new System.EventHandler(this.btnSelectSourceDirectory_Click);
+            // 
+            // btnSelectDestDirectory
+            // 
+            this.btnSelectDestDirectory.Location = new System.Drawing.Point(440, 33);
+            this.btnSelectDestDirectory.Name = "btnSelectDestDirectory";
+            this.btnSelectDestDirectory.Size = new System.Drawing.Size(106, 23);
+            this.btnSelectDestDirectory.TabIndex = 5;
+            this.btnSelectDestDirectory.Text = "Select Directory...";
+            this.btnSelectDestDirectory.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 341);
+            this.Controls.Add(this.btnSelectDestDirectory);
+            this.Controls.Add(this.btnSelectSourceDirectory);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtOutputDirectory);
             this.Controls.Add(this.label1);
@@ -103,6 +126,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtOutputDirectory;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button btnSelectSourceDirectory;
+        private System.Windows.Forms.Button btnSelectDestDirectory;
     }
 }
 
